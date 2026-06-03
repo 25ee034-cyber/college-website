@@ -1,15 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Certificates</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-<h1>My Certificates</h1>
+    <section class="certificates-section">
 
-<div id="certificate-container"></div>
+        <h1 class="certificates-title">🏆 My Certificates</h1>
 
-<script src="js/certificates.js"></script>
+        <p class="certificates-subtitle">
+            My Learning Journey & Achievements
+        </p>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h3 id="totalCertificates">0</h3>
+                <p>Certificates</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 id="totalIssuers">0</h3>
+                <p>Organizations</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 id="latestYear">2026</h3>
+                <p>Latest Achievement</p>
+            </div>
+
+        </div>
+
+        <div id="certificate-container"></div>
+
+    </section>
+
+    <script src="js/certificates.js"></script>
 
 </body>
+
 </html>

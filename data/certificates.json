@@ -1,9 +1,17 @@
-[
-  {
-    "title": "Python Programming",
-    "issuer": "Infosys Springboard",
-    "date": "2025-10-15",
-    "image": "certificates/python.jpg",
-    "description": "Completed Python Programming course covering OOP, functions and problem solving."
-  }
-]
+// [
+//   {
+//     "title": "Python Programming",
+//     "issuer": "Infosys Springboard",
+//     "date": "2025-10-15",
+//     "image": "certificates/python.jpg",
+//     "description": "Completed Python Programming course covering functions, OOP and problem solving."
+//   },
+
+//   {
+//     "title": "Web Development",
+//     "issuer": "Coursera",
+//     "date": "2026-02-20",
+//     "image": "certificates/webdev.jpg",
+//     "description": "Completed Web Development course covering HTML, CSS and JavaScript."
+//   }
+// ]
