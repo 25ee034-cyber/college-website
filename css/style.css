@@ -1202,3 +1202,13 @@ body.dark .video-overlay {
     font-size: 14px;
   }
 }
+.card{
+    border:1px solid #ddd;
+    padding:15px;
+    margin:20px;
+    border-radius:10px;
+}
+
+.card img{
+    max-width:100%;
+}
