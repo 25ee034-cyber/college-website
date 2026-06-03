@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Certificates</title>
+    <title>Certificates | Dhruvil</title>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -14,9 +14,36 @@
 
 <body>
 
+    <!-- ===== NAVBAR ===== -->
+
+    <header class="navbar">
+        <h2 class="logo">Dhruvil</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="playground.html">Playground</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="certificates.html" class="active">Certificates</a>
+
+            <a href="https://github.com/pateldhruvil2008/college-website/tree/main/materials"
+                target="_blank">
+                Materials
+            </a>
+        </nav>
+
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+    </header>
+
+    <!-- ===== CERTIFICATES SECTION ===== -->
+
     <section class="certificates-section">
 
-        <h1 class="certificates-title">🏆 My Certificates</h1>
+        <h1 class="certificates-title">
+            🏆 My Certificates
+        </h1>
 
         <p class="certificates-subtitle">
             My Learning Journey & Achievements
@@ -45,7 +72,28 @@
 
     </section>
 
+    <!-- ===== FOOTER ===== -->
+
+    <footer>
+        <p>
+            © <span id="year"></span> Dhruvil ·
+            <span class="last-updated">
+                Last updated:
+                <span id="lastUpdated"></span>
+            </span>
+        </p>
+    </footer>
+
+    <!-- ===== JS ===== -->
+
     <script src="js/certificates.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/last-updated.js"></script>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
 
 </body>
 

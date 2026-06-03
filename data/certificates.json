@@ -1,17 +1,51 @@
-// [
-//   {
-//     "title": "Python Programming",
-//     "issuer": "Infosys Springboard",
-//     "date": "2025-10-15",
-//     "image": "certificates/python.jpg",
-//     "description": "Completed Python Programming course covering functions, OOP and problem solving."
-//   },
+[
+  {
+    "title": "Food • Planet • Health Webinar",
+    "issuer": "Food Planet Health & Vegan Outreach",
+    "date": "2026-03-21",
+    "image": "certificates/FOOD_PLANT_HEALTH.png",
+    "description": "Successfully completed the Food • Planet • Health webinar focused on sustainable nutrition, environmental awareness, and healthy lifestyle choices."
+  },
 
-//   {
-//     "title": "Web Development",
-//     "issuer": "Coursera",
-//     "date": "2026-02-20",
-//     "image": "certificates/webdev.jpg",
-//     "description": "Completed Web Development course covering HTML, CSS and JavaScript."
-//   }
-// ]
+  {
+    "title": "ROBO Race - CognizanceX'26",
+    "issuer": "CHARUSAT",
+    "date": "2026-02-13",
+    "image": "certificates/ROBO Race_DHRUVIL PATEL.jpg",
+    "description": "Actively participated in the ROBO Race technical event organized under CognizanceX'26, demonstrating teamwork, problem-solving, and technical skills."
+  },
+
+  {
+    "title": "C2C 1.0 Volunteer",
+    "issuer": "CHARUSAT Startup and Innovation Cell (CSIC)",
+    "date": "2026-01-01",
+    "image": "certificates/SSIP.jpg",
+    "description": "Served as a dedicated volunteer for the Concept to Creation (C2C 1.0) event, contributing to the successful execution and management of activities."
+  },
+
+  {
+    "title": "TATA Crucible Campus Quiz 2025",
+    "issuer": "Tata Group & Unstop",
+    "date": "2025-01-01",
+    "image": "certificates/TATAGROUP.png",
+    "description": "Participated in the TATA Crucible Campus Quiz 2025, enhancing general knowledge, analytical thinking, and competitive aptitude."
+  },
+  {
+  "title": "Programming & Website Development Course",
+  "issuer": "Information Technology Centre (ITC)",
+  "date": "2025-05-22",
+  "image": "certificates/ITC.png",
+  "description": "Successfully completed the Programming & Website Development Course (120 Hours) covering C Programming, HTML, CSS, C++, JavaScript, Bootstrap, Python Programming, MS SQL, and Web Development fundamentals with an overall B Grade.",
+  "skills": [
+    "C Programming",
+    "HTML",
+    "CSS",
+    "C++",
+    "JavaScript",
+    "Bootstrap",
+    "Python",
+    "SQL",
+    "Web Development"
+  ]
+}
+]
