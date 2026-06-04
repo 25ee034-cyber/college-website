@@ -35,7 +35,11 @@ fetch("data/certificates.json")
                 class="view-btn">
                 View Certificate
                 </a>
-
+                <button
+class="story-btn"
+onclick='showStory(${JSON.stringify(cert.story)})'>
+📖 Read My Story
+</button>
             </div>
 
         </div>
@@ -68,5 +72,47 @@ fetch("data/certificates.json")
 .catch(error => {
 
     console.log(error);
+
+});
+function showStory(story){
+
+    document.getElementById("storyTitle").innerHTML =
+    "📖 My Learning Story";
+
+    document.getElementById("storyText").innerHTML =
+
+    `
+    <h3>🎯 Why I Joined</h3>
+    <p>${story.why}</p>
+
+    <h3>📚 What I Learned</h3>
+    <p>${story.learned}</p>
+
+    <h3>💡 My Experience</h3>
+    <p>${story.experience}</p>
+
+    <h3>🚀 Impact On My Journey</h3>
+    <p>${story.impact}</p>
+    `;
+
+    document.getElementById("storyModal")
+    .style.display = "flex";
+}
+function closeStory(){
+
+    document.getElementById("storyModal")
+    .style.display = "none";
+
+}
+window.addEventListener("click", function(event){
+
+    const modal =
+    document.getElementById("storyModal");
+
+    if(event.target === modal){
+
+        modal.style.display = "none";
+
+    }
 
 });

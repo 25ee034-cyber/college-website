@@ -1,51 +1,82 @@
 [
-  {
-    "title": "Food • Planet • Health Webinar",
-    "issuer": "Food Planet Health & Vegan Outreach",
-    "date": "2026-03-21",
-    "image": "certificates/FOOD_PLANT_HEALTH.png",
-    "description": "Successfully completed the Food • Planet • Health webinar focused on sustainable nutrition, environmental awareness, and healthy lifestyle choices."
-  },
+{
+"title": "Food • Planet • Health Webinar",
+"issuer": "Food Planet Health & Vegan Outreach",
+"date": "2026-03-21",
+"image": "certificates/FOOD_PLANT_HEALTH.png",
+"description": "Successfully completed the Food • Planet • Health webinar focused on sustainable nutrition, environmental awareness, and healthy lifestyle choices.",
+"story": {
+"why": "I joined this webinar to understand how nutrition, health and environmental sustainability are connected.",
+"learned": "Healthy nutrition habits, sustainable food choices and environmental awareness.",
+"experience": "The webinar provided practical insights into making healthier lifestyle choices while contributing positively to the environment.",
+"impact": "It encouraged me to become more conscious about sustainability and personal health."
+}
+},
 
-  {
-    "title": "ROBO Race - CognizanceX'26",
-    "issuer": "CHARUSAT",
-    "date": "2026-02-13",
-    "image": "certificates/ROBO Race_DHRUVIL PATEL.jpg",
-    "description": "Actively participated in the ROBO Race technical event organized under CognizanceX'26, demonstrating teamwork, problem-solving, and technical skills."
-  },
+{
+"title": "ROBO Race - CognizanceX'26",
+"issuer": "CHARUSAT",
+"date": "2026-02-13",
+"image": "certificates/ROBO Race_DHRUVIL PATEL.jpg",
+"description": "Actively participated in the ROBO Race technical event organized under CognizanceX'26, demonstrating teamwork, problem-solving, and technical skills.",
+"story": {
+"why": "I wanted to participate in a robotics competition and challenge my technical abilities.",
+"learned": "Robotics concepts, teamwork, problem solving and competitive thinking.",
+"experience": "Working with a team in a competitive environment helped me improve both technical and communication skills.",
+"impact": "The event increased my confidence in participating in future technical competitions."
+}
+},
 
-  {
-    "title": "C2C 1.0 Volunteer",
-    "issuer": "CHARUSAT Startup and Innovation Cell (CSIC)",
-    "date": "2026-01-01",
-    "image": "certificates/SSIP.jpg",
-    "description": "Served as a dedicated volunteer for the Concept to Creation (C2C 1.0) event, contributing to the successful execution and management of activities."
-  },
+{
+"title": "C2C 1.0 Volunteer",
+"issuer": "CHARUSAT Startup and Innovation Cell (CSIC)",
+"date": "2026-01-01",
+"image": "certificates/SSIP.jpg",
+"description": "Served as a dedicated volunteer for the Concept to Creation (C2C 1.0) event, contributing to the successful execution and management of activities.",
+"story": {
+"why": "I wanted to gain experience in event management and contribute to an innovation-focused event.",
+"learned": "Leadership, communication, teamwork and event coordination.",
+"experience": "Working behind the scenes taught me how successful events are organized and executed.",
+"impact": "This experience improved my confidence and professional communication skills."
+}
+},
 
-  {
-    "title": "TATA Crucible Campus Quiz 2025",
-    "issuer": "Tata Group & Unstop",
-    "date": "2025-01-01",
-    "image": "certificates/TATAGROUP.png",
-    "description": "Participated in the TATA Crucible Campus Quiz 2025, enhancing general knowledge, analytical thinking, and competitive aptitude."
-  },
-  {
-  "title": "Programming & Website Development Course",
-  "issuer": "Information Technology Centre (ITC)",
-  "date": "2025-05-22",
-  "image": "certificates/ITC.png",
-  "description": "Successfully completed the Programming & Website Development Course (120 Hours) covering C Programming, HTML, CSS, C++, JavaScript, Bootstrap, Python Programming, MS SQL, and Web Development fundamentals with an overall B Grade.",
-  "skills": [
-    "C Programming",
-    "HTML",
-    "CSS",
-    "C++",
-    "JavaScript",
-    "Bootstrap",
-    "Python",
-    "SQL",
-    "Web Development"
-  ]
+{
+"title": "TATA Crucible Campus Quiz 2025",
+"issuer": "Tata Group & Unstop",
+"date": "2025-01-01",
+"image": "certificates/TATAGROUP.png",
+"description": "Participated in the TATA Crucible Campus Quiz 2025, enhancing general knowledge, analytical thinking, and competitive aptitude.",
+"story": {
+"why": "I wanted to test my knowledge and improve my analytical thinking abilities.",
+"learned": "Business awareness, current affairs, logical thinking and competitive aptitude.",
+"experience": "The quiz challenged me to think quickly and exposed me to a wide range of topics.",
+"impact": "It motivated me to stay updated with business, technology and world affairs."
+}
+},
+
+{
+"title": "Programming & Website Development Course",
+"issuer": "Information Technology Centre (ITC)",
+"date": "2025-05-22",
+"image": "certificates/ITC.png",
+"description": "Successfully completed the Programming & Website Development Course (120 Hours) covering C Programming, HTML, CSS, C++, JavaScript, Bootstrap, Python Programming, MS SQL, and Web Development fundamentals with an overall B Grade.",
+"skills": [
+"C Programming",
+"HTML",
+"CSS",
+"C++",
+"JavaScript",
+"Bootstrap",
+"Python",
+"SQL",
+"Web Development"
+],
+"story": {
+"why": "I wanted to build a strong foundation in programming and web development.",
+"learned": "HTML, CSS, JavaScript, Python, SQL, Bootstrap, C and C++.",
+"experience": "This was one of the most valuable courses in my learning journey because it transformed theoretical knowledge into practical development skills.",
+"impact": "This course inspired me to create real-world projects including my portfolio website and college website."
+}
 }
 ]
