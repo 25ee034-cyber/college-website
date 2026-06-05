@@ -280,3 +280,42 @@ function clearChat() {
   }
 
 }
+// =========================
+// VISITOR COUNTER
+// =========================
+
+fetch("https://api.countapi.xyz/hit/dhruvil-portfolio/home")
+.then(res => res.json())
+.then(data => {
+
+  const counter =
+  document.getElementById("visitor-count");
+
+  if(counter){
+
+    counter.textContent =
+    data.value;
+
+  }
+
+});
+
+// =========================
+// COUNTRY DETECTION
+// =========================
+
+fetch("https://ipapi.co/json/")
+.then(res => res.json())
+.then(data => {
+
+  const country =
+  document.getElementById("visitor-country");
+
+  if(country){
+
+    country.textContent =
+    data.country_name;
+
+  }
+
+});

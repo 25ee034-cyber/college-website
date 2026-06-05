@@ -1844,3 +1844,22 @@ body.dark .video-overlay {
 .clear-chat-btn:hover{
   transform: scale(1.1);
 }
+.visitor-box{
+  max-width: 350px;
+  margin: 30px auto;
+  padding: 15px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,.1);
+}
+
+.visitor-box p{
+  margin: 8px 0;
+  font-weight: 500;
+}
