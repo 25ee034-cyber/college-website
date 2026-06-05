@@ -1928,31 +1928,68 @@ body.dark .stats-card p{
 
 }
 /* =========================
-   ALL DEVICES RESPONSIVE
+   PORTFOLIO STATS CARD
    ========================= */
 
-/* Tablets */
-@media screen and (max-width: 1024px){
+.stats-card{
+  width: min(90%, 500px);
+  margin: 40px auto;
+  padding: 25px;
 
-  .stats-card{
-    width: 90%;
-    max-width: 500px;
-    margin: 30px auto;
-    padding: 25px;
-  }
+  text-align: center;
 
-  .stats-card h2{
-    font-size: 24px;
-  }
+  background: #ffffff;
+  border-radius: 20px;
 
-  .stats-card p{
-    font-size: 16px;
-  }
+  border: 1px solid rgba(37,99,235,.2); /* ADD HERE */
 
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
 }
 
-/* Mobile */
-@media screen and (max-width: 768px){
+.stats-card:hover{
+  transform: translateY(-5px);
+}
+
+.stats-card h2{
+  color: #2563eb;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.stats-card p{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.stats-card img{
+  display: block;
+  margin: auto;
+
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dark Mode */
+
+body.dark .stats-card{
+  background: #020617;
+
+  border: 1px solid rgba(96,165,250,.2); /* ADD HERE */
+}
+body.dark .stats-card p{
+  color: white;
+}
+
+body.dark .stats-card h2{
+  color: #60a5fa;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width:768px){
 
   .stats-card{
     width: 92%;
@@ -1962,39 +1999,74 @@ body.dark .stats-card p{
 
   .stats-card h2{
     font-size: 22px;
-    margin-bottom: 10px;
   }
 
   .stats-card p{
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 16px;
   }
 
   .stats-card img{
     width: 100%;
-    max-width: 250px;
+    max-width: 260px;
   }
 
 }
+/* =========================
+   DYNAMIC TIME THEMES
+   ========================= */
 
-/* Small Mobile */
-@media screen and (max-width: 480px){
+/* MORNING */
 
-  .stats-card{
-    width: 95%;
-    padding: 18px;
-  }
+body.morning{
+  background:
+  linear-gradient(
+    135deg,
+    #fef9c3,
+    #fde68a,
+    #fbbf24
+  );
 
-  .stats-card h2{
-    font-size: 20px;
-  }
+  transition: 1s;
+}
 
-  .stats-card p{
-    font-size: 14px;
-  }
+/* DAY */
 
-  .stats-card img{
-    max-width: 220px;
-  }
+body.day{
+  background:
+  linear-gradient(
+    135deg,
+    #dbeafe,
+    #93c5fd,
+    #3b82f6
+  );
 
+  transition: 1s;
+}
+
+/* SUNSET */
+
+body.sunset{
+  background:
+  linear-gradient(
+    135deg,
+    #fb923c,
+    #f97316,
+    #dc2626
+  );
+
+  transition: 1s;
+}
+
+/* NIGHT */
+
+body.night{
+  background:
+  linear-gradient(
+    135deg,
+    #020617,
+    #0f172a,
+    #1e293b
+  );
+
+  transition: 1s;
 }
