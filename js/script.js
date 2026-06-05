@@ -284,7 +284,7 @@ function clearChat() {
 // VISITOR COUNTER
 // =========================
 
-fetch("https://api.countapi.xyz/hit/dhruvil-portfolio/home")
+fetch("https://api.countapi.xyz/hit/dhruvilpatel2008.github.io/portfolio")
 .then(res => res.json())
 .then(data => {
 

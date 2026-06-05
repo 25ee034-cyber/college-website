@@ -1844,22 +1844,86 @@ body.dark .video-overlay {
 .clear-chat-btn:hover{
   transform: scale(1.1);
 }
-.visitor-box{
-  max-width: 350px;
-  margin: 30px auto;
-  padding: 15px;
-
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
-
-  border-radius: 15px;
+.stats-card{
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
 
   text-align: center;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,.1);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(37,99,235,.2);
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.12),
+    0 0 25px rgba(37,99,235,.15);
+
+  transition: all .3s ease;
 }
 
-.visitor-box p{
-  margin: 8px 0;
+.stats-card:hover{
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.18),
+    0 0 35px rgba(37,99,235,.25);
+}
+
+.stats-card h2{
+  color: #2563eb;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.stats-card p{
+  font-size: 18px;
   font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.stats-card img{
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 10px;
+
+  transition: transform .3s ease;
+}
+
+.stats-card img:hover{
+  transform: scale(1.05);
+}
+
+/* Dark Mode */
+body.dark .stats-card{
+  background: rgba(2,6,23,.9);
+  border: 1px solid rgba(96,165,250,.2);
+}
+
+body.dark .stats-card h2{
+  color: #60a5fa;
+}
+
+body.dark .stats-card p{
+  color: #e5e7eb;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+  .stats-card{
+    width: 92%;
+    padding: 20px;
+  }
+
+  .stats-card h2{
+    font-size: 22px;
+  }
+
+  .stats-card p{
+    font-size: 16px;
+  }
+
 }
