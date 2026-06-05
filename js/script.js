@@ -6,41 +6,84 @@ console.log("Portfolio website loaded successfully");
 
 const chatBtn = document.getElementById("chat-btn");
 const chatBox = document.getElementById("chat-box");
+const userInput = document.getElementById("userInput");
 
 // =========================
 // OPEN / CLOSE CHATBOT
 // =========================
 
-chatBtn.addEventListener("click", (e) => {
+if (chatBtn && chatBox) {
 
-  e.stopPropagation();
+  chatBtn.addEventListener("click", (e) => {
 
-  chatBox.style.display =
-    chatBox.style.display === "flex"
-      ? "none"
-      : "flex";
+    e.stopPropagation();
 
-  const orb = document.querySelector(".ai-orb");
+    chatBox.style.display =
+      chatBox.style.display === "flex"
+        ? "none"
+        : "flex";
 
-  if (orb) {
+    const orb = document.querySelector(".ai-orb");
 
-    orb.classList.add("clicked");
+    if (orb) {
 
-    setTimeout(() => {
-      orb.classList.remove("clicked");
-    }, 500);
+      orb.classList.add("clicked");
+
+      setTimeout(() => {
+        orb.classList.remove("clicked");
+      }, 500);
+
+    }
+
+  });
+
+  chatBox.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+
+}
+
+// =========================
+// CHAT HISTORY RESTORE
+// =========================
+
+window.addEventListener("load", () => {
+
+  const savedChat =
+    localStorage.getItem("dhruvilChat");
+
+  if (
+    savedChat &&
+    document.getElementById("chat-messages")
+  ) {
+
+    document.getElementById(
+      "chat-messages"
+    ).innerHTML = savedChat;
 
   }
 
 });
 
 // =========================
-// PREVENT CLOSE INSIDE CHAT
+// SAVE CHAT
 // =========================
 
-chatBox.addEventListener("click", (e) => {
-  e.stopPropagation();
-});
+function saveChat() {
+
+  const messages =
+    document.getElementById("chat-messages");
+
+  if (messages) {
+
+    localStorage.setItem(
+      "dhruvilChat",
+      messages.innerHTML
+    );
+
+  }
+
+}
 
 // =========================
 // PREDEFINED QUESTIONS
@@ -82,10 +125,15 @@ function askQuestion(type) {
   }
 
   messages.innerHTML += `
-    <div class="bot-msg">${answer}</div>
+    <div class="bot-msg">
+      ${answer}
+    </div>
   `;
 
-  messages.scrollTop = messages.scrollHeight;
+  messages.scrollTop =
+    messages.scrollHeight;
+
+  saveChat();
 
 }
 
@@ -102,6 +150,17 @@ function sendMessage() {
     input.value.trim();
 
   if (text === "") return;
+
+  const messages =
+    document.getElementById("chat-messages");
+
+  messages.innerHTML += `
+    <div class="bot-msg">
+      📨 Redirecting to WhatsApp...
+    </div>
+  `;
+
+  saveChat();
 
   const msg =
 `👋 Hello Dhruvil,
@@ -124,20 +183,20 @@ ${text}`;
 // ENTER KEY SUPPORT
 // =========================
 
-const userInput =
-  document.getElementById("userInput");
-
 if (userInput) {
 
-  userInput.addEventListener("keypress", function(e) {
+  userInput.addEventListener(
+    "keypress",
+    function(e) {
 
-    if (e.key === "Enter") {
+      if (e.key === "Enter") {
 
-      sendMessage();
+        sendMessage();
+
+      }
 
     }
-
-  });
+  );
 
 }
 
@@ -145,22 +204,79 @@ if (userInput) {
 // CLICK OUTSIDE = CLOSE
 // =========================
 
-document.addEventListener("click", function() {
+document.addEventListener(
+  "click",
+  function() {
 
-  chatBox.style.display = "none";
+    if (chatBox) {
 
-});
+      chatBox.style.display = "none";
+
+    }
+
+  }
+);
 
 // =========================
 // ESC KEY = CLOSE
 // =========================
 
-document.addEventListener("keydown", function(e) {
+document.addEventListener(
+  "keydown",
+  function(e) {
 
-  if (e.key === "Escape") {
+    if (
+      e.key === "Escape" &&
+      chatBox
+    ) {
 
-    chatBox.style.display = "none";
+      chatBox.style.display =
+        "none";
+
+    }
+
+  }
+);
+
+// =========================
+// CLEAR CHAT FUNCTION
+// =========================
+
+function clearChat() {
+
+  localStorage.removeItem(
+    "dhruvilChat"
+  );
+
+  const messages =
+    document.getElementById(
+      "chat-messages"
+    );
+
+  if (messages) {
+
+    messages.innerHTML = `
+      <div class="bot-msg">
+        Hello! Choose an option 👇
+      </div>
+
+      <button onclick="askQuestion('about')">
+        About Me
+      </button>
+
+      <button onclick="askQuestion('skills')">
+        Skills
+      </button>
+
+      <button onclick="askQuestion('projects')">
+        Projects
+      </button>
+
+      <button onclick="askQuestion('contact')">
+        Contact
+      </button>
+    `;
 
   }
 
-});
+}
