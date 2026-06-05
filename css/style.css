@@ -2011,62 +2011,129 @@ body.dark .stats-card h2{
   }
 
 }
+
 /* =========================
-   DYNAMIC TIME THEMES
+   WEATHER VIDEO BACKGROUND
    ========================= */
 
-/* MORNING */
+#weather-video{
 
-body.morning{
-  background:
-  linear-gradient(
-    135deg,
-    #fef9c3,
-    #fde68a,
-    #fbbf24
-  );
+  position: fixed;
 
-  transition: 1s;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: -999;
+
+  opacity: .45;
+
 }
 
-/* DAY */
+/* Dark Overlay */
 
-body.day{
+body::before{
+
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
   background:
-  linear-gradient(
-    135deg,
-    #dbeafe,
-    #93c5fd,
-    #3b82f6
-  );
+  rgba(0,0,0,.45);
 
-  transition: 1s;
+  z-index: -998;
+
+}
+/* =========================
+   WEATHER VIDEO BACKGROUND
+   ========================= */
+
+#weather-video{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: cover;
+
+  z-index: -999;
+
+  opacity: 0.45;
+
+  pointer-events: none;
 }
 
-/* SUNSET */
+/* Overlay */
 
-body.sunset{
-  background:
-  linear-gradient(
-    135deg,
-    #fb923c,
-    #f97316,
-    #dc2626
-  );
+body::before{
+  content: "";
 
-  transition: 1s;
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0,0,0,.35);
+
+  z-index: -998;
+
+  pointer-events: none;
 }
 
-/* NIGHT */
+/* =========================
+   TABLET
+   ========================= */
 
-body.night{
-  background:
-  linear-gradient(
-    135deg,
-    #020617,
-    #0f172a,
-    #1e293b
-  );
+@media (max-width: 1024px){
 
-  transition: 1s;
+  #weather-video{
+    opacity: 0.35;
+  }
+
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px){
+
+  #weather-video{
+
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover;
+
+    opacity: 0.25;
+  }
+
+  body::before{
+
+    background:
+    rgba(0,0,0,.50);
+
+  }
+
+}
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px){
+
+  #weather-video{
+
+    opacity: 0.20;
+
+    filter: blur(1px);
+  }
+
 }

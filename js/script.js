@@ -301,62 +301,81 @@ fetch("https://api.countapi.xyz/hit/dhruvilpatel2008.github.io/portfolio")
 });
 
 // =========================
-// COUNTRY DETECTION
+// WEATHER VIDEO SYSTEM
 // =========================
 
-fetch("https://ipapi.co/json/")
+const API_KEY = "f6c1e60c343bf6acc1dd441d56a85b80";
+
+// Anand, IN weather
+fetch(
+`https://api.openweathermap.org/data/2.5/weather?q=Anand,IN&appid=${API_KEY}&units=metric`
+)
 .then(res => res.json())
 .then(data => {
 
-  const country =
-  document.getElementById("visitor-country");
+  console.log(data);
 
-  if(country){
+  console.log(
+    "Weather:",
+    data.weather[0].main
+  );
 
-    country.textContent =
-    data.country_name;
+  console.log(
+    "City:",
+    data.name
+  );
+
+  const weather =
+  data.weather[0].main;
+
+  const video =
+  document.getElementById("weather-video");
+
+  if(!video) return;
+
+  if(weather === "Clear"){
+
+    video.src =
+    "videos/sunny.mp4";
 
   }
 
+  else if(weather === "Rain"){
+
+    video.src =
+    "videos/rain.mp4";
+
+  }
+
+  else if(weather === "Clouds"){
+
+    video.src =
+    "videos/cloud.mp4";
+
+  }
+
+  else if(weather === "Thunderstorm"){
+
+    video.src =
+    "videos/storm.mp4";
+
+  }
+
+  else{
+
+    video.src =
+    "videos/night.mp4";
+
+  }
+
+  video.load();
+
+})
+.catch(error => {
+
+  console.log(
+    "Weather Error:",
+    error
+  );
+
 });
-// =========================
-// DYNAMIC TIME THEME
-// =========================
-
-const hour =
-new Date().getHours();
-
-const body =
-document.body;
-
-if(hour >= 6 && hour < 12){
-
-  body.classList.add(
-    "morning"
-  );
-
-}
-
-else if(hour >= 12 && hour < 18){
-
-  body.classList.add(
-    "day"
-  );
-
-}
-
-else if(hour >= 18 && hour < 21){
-
-  body.classList.add(
-    "sunset"
-  );
-
-}
-
-else{
-
-  body.classList.add(
-    "night"
-  );
-
-}
