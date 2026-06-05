@@ -1927,3 +1927,74 @@ body.dark .stats-card p{
   }
 
 }
+/* =========================
+   ALL DEVICES RESPONSIVE
+   ========================= */
+
+/* Tablets */
+@media screen and (max-width: 1024px){
+
+  .stats-card{
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+  }
+
+  .stats-card h2{
+    font-size: 24px;
+  }
+
+  .stats-card p{
+    font-size: 16px;
+  }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+
+  .stats-card{
+    width: 92%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .stats-card h2{
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .stats-card p{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .stats-card img{
+    width: 100%;
+    max-width: 250px;
+  }
+
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px){
+
+  .stats-card{
+    width: 95%;
+    padding: 18px;
+  }
+
+  .stats-card h2{
+    font-size: 20px;
+  }
+
+  .stats-card p{
+    font-size: 14px;
+  }
+
+  .stats-card img{
+    max-width: 220px;
+  }
+
+}
