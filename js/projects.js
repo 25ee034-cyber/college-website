@@ -1,4 +1,4 @@
-const username = "dhruvilpatel2008"; // 🔴 GitHub username
+const username = window.location.hostname.split(".")[0]; // 🔴 GitHub username
 
 const container = document.getElementById("projects-container");
 
