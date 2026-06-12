@@ -10,9 +10,9 @@ git add .
 
 git diff --cached --quiet
 if not errorlevel 1 (
-    set /p MSG=Commit Message (Press Enter for "Website Update"): 
-    if "%MSG%"=="" set MSG=Website Update
-    git commit -m "%MSG%"
+set /p MSG=Commit Message (Press Enter for "Website Update"):
+if "%MSG%"=="" set MSG=Website Update
+git commit -m "%MSG%"
 )
 
 echo.

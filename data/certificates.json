@@ -78,5 +78,27 @@
 "experience": "This was one of the most valuable courses in my learning journey because it transformed theoretical knowledge into practical development skills.",
 "impact": "This course inspired me to create real-world projects including my portfolio website and college website."
 }
+},
+
+{
+  "title": "Basics of Robotics",
+  "issuer": "Siemens & Coursera",
+  "date": "2026-06-12",
+  "image": "certificates/Basics_of_Robotics.png",
+  "description": "Successfully completed the Basics of Robotics course authorized by Siemens and offered through Coursera.",
+  "skills": [
+    "Robotics",
+    "Automation",
+    "Industrial Robotics",
+    "Robot Programming",
+    "Manufacturing Systems"
+  ],
+  "verifyUrl": "https://coursera.org/verify/8VEE8HWNFKXG",
+  "story": {
+    "why": "I enrolled in this course to understand the fundamentals of robotics and explore how automation is transforming modern industries.",
+    "learned": "Robot fundamentals, industrial automation concepts, robotic systems, applications of robotics in manufacturing and real-world automation techniques.",
+    "experience": "The course provided a strong introduction to robotics concepts through practical examples and industry-focused learning materials.",
+    "impact": "This certification strengthened my interest in robotics, automation and electrical engineering while enhancing my technical knowledge for future projects."
+  }
 }
 ]
