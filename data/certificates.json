@@ -100,5 +100,26 @@
     "experience": "The course provided a strong introduction to robotics concepts through practical examples and industry-focused learning materials.",
     "impact": "This certification strengthened my interest in robotics, automation and electrical engineering while enhancing my technical knowledge for future projects."
   }
+},
+
+{
+  "title": "Youth Speak Forum 2025",
+  "issuer": "AIESEC",
+  "date": "2025-01-01",
+  "image": "certificates/YOUTH_SPEAK_FORUM_2025.png",
+  "description": "Received a Certificate of Participation for actively participating in AIESEC's Youth Speak Forum 2025, contributing to discussions on leadership, youth empowerment, and global challenges.",
+  "skills": [
+    "Leadership",
+    "Communication",
+    "Critical Thinking",
+    "Networking",
+    "Youth Development"
+  ],
+  "story": {
+    "why": "I participated in Youth Speak Forum 2025 to interact with young leaders, gain new perspectives, and understand how youth can contribute to solving global challenges.",
+    "learned": "Leadership skills, communication techniques, problem-solving approaches, teamwork, and the importance of youth involvement in social impact initiatives.",
+    "experience": "The event provided an inspiring environment where I connected with like-minded individuals, attended engaging sessions, and explored innovative ideas for creating positive change.",
+    "impact": "This experience boosted my confidence, expanded my professional network, and motivated me to take a more active role in leadership and community development activities."
+  }
 }
 ]
